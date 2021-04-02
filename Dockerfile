@@ -24,4 +24,4 @@ RUN chmod +x /entrypoints.sh
 
 EXPOSE 58846 58946 58946/udp
 
-CMD [ "/entrypoints.sh" ]
+ENTRYPOINT [ "/entrypoints.sh" ]

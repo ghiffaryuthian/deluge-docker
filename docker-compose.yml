@@ -5,9 +5,9 @@ services:
   container_name: deluge
   build: .
   restart: always
-  # volumes:
-  #  - ./Downloads:/Downloads
-  #  - ./config:/home/user/.config/deluge
+  volumes:
+   - ./Downloads:/Downloads
+   - ./config:/home/user/.config/deluge
   ports:
    - "8112:8112"
    - "58846:58846"
